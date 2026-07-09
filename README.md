@@ -5,7 +5,7 @@ uint256 private storedNumber;
 event NumberUpdated(uint256 newValue);
 function setNumber(uint256 _number) public {
         storedNumber = _number;
-   emit NumberUpdated(_number);
+   emit (_number);
 }
 function getNumber() public view returns (uint256) {
     return storedNumber;
